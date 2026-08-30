@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 372" width="860" height="372" role="img" aria-label="Selected work: ORCA, marine safety advisory, a refusal you can audit. Causa, microservice root-cause, a verdict you can defend. welp, shell failure triage, rules not guesses. the house, compositor shell, a scope it states out loud. Replay Trader, market replay, same inputs same session. bjak, six-deck blackjack, an edge measured not claimed.">
+  <title>Selected work — what each system guarantees</title>
+  <style>
+    text { font-family: "JetBrains Mono", "SFMono-Regular", ui-monospace, Consolas, "Liberation Mono", monospace; }
+    .hdr   { font-size: 10.5px; fill: #5C5665; letter-spacing: .18em; }
+    .name  { font-size: 15px; fill: #D9B87C; font-weight: 600; }
+    .stack { font-size: 10.5px; fill: #6F6879; letter-spacing: .04em; }
+    .dom   { font-size: 13px; fill: #A9A39A; dominant-baseline: middle; }
+    .gtee  { font-size: 13px; fill: #E8E3DA; dominant-baseline: middle; }
+    .hair  { stroke: #23202A; stroke-width: 1; }
+  </style>
+
+  <rect x=".5" y=".5" width="859" height="371" rx="10" fill="#0B0B0D" stroke="#23202A"/>
+
+  <text class="hdr" x="30" y="34">SELECTED WORK</text>
+  <text class="hdr" x="250" y="34">DOMAIN</text>
+  <text class="hdr" x="470" y="34">GUARANTEE</text>
+  <line class="hair" x1="26" y1="52" x2="834" y2="52"/>
+  <rect x="30" y="44" width="34" height="2" fill="#D9B87C"/>
+
+  <g>
+    <text class="name"  x="30" y="90.0">ORCA</text>
+    <text class="stack" x="30" y="107.0">python · fastapi</text>
+    <text class="dom"   x="250" y="97.0">marine safety advisory</text>
+    <text class="gtee"  x="470" y="97.0">a refusal you can audit</text>
+  </g>
+  <line class="hair" x1="26" y1="120" x2="834" y2="120"/>
+  <g>
+    <text class="name"  x="30" y="136.0">Causa</text>
+    <text class="stack" x="30" y="153.0">otel · python</text>
+    <text class="dom"   x="250" y="143.0">microservice root-cause</text>
+    <text class="gtee"  x="470" y="143.0">a verdict you can defend</text>
+  </g>
+  <line class="hair" x1="26" y1="166" x2="834" y2="166"/>
+  <g>
+    <text class="name"  x="30" y="182.0">welp</text>
+    <text class="stack" x="30" y="199.0">rust · sqlite</text>
+    <text class="dom"   x="250" y="189.0">shell failure triage</text>
+    <text class="gtee"  x="470" y="189.0">rules, not guesses</text>
+  </g>
+  <line class="hair" x1="26" y1="212" x2="834" y2="212"/>
+  <g>
+    <text class="name"  x="30" y="228.0">the house</text>
+    <text class="stack" x="30" y="245.0">qml · quickshell</text>
+    <text class="dom"   x="250" y="235.0">compositor shell</text>
+    <text class="gtee"  x="470" y="235.0">a scope it states out loud</text>
+  </g>
+  <line class="hair" x1="26" y1="258" x2="834" y2="258"/>
+  <g>
+    <text class="name"  x="30" y="274.0">Replay Trader</text>
+    <text class="stack" x="30" y="291.0">kotlin · compose</text>
+    <text class="dom"   x="250" y="281.0">market replay</text>
+    <text class="gtee"  x="470" y="281.0">same inputs, same session</text>
+  </g>
+  <line class="hair" x1="26" y1="304" x2="834" y2="304"/>
+  <g>
+    <text class="name"  x="30" y="320.0">bjak</text>
+    <text class="stack" x="30" y="337.0">qml</text>
+    <text class="dom"   x="250" y="327.0">six-deck blackjack</text>
+    <text class="gtee"  x="470" y="327.0">an edge measured, not claimed</text>
+  </g>
+</svg>

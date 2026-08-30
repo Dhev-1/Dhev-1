@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 240" width="860" height="240" role="img" aria-label="Currently: ORCA — hardening the deterministic safety policy; welp — more rules, until it earns silent trust; the house — folding the widgets into layer-shell; reading — compilers, distributed systems.">
+  <title>Currently</title>
+  <style>
+    text { font-family: "JetBrains Mono", "SFMono-Regular", ui-monospace, Consolas, "Liberation Mono", monospace; dominant-baseline: middle; }
+    .hdr  { font-size: 10.5px; fill: #5C5665; letter-spacing: .18em; }
+    .what { font-size: 13.5px; fill: #D9B87C; }
+    .det  { font-size: 13px; fill: #A9A39A; }
+  </style>
+  <rect x=".5" y=".5" width="859" height="239" rx="10" fill="#0B0B0D" stroke="#23202A"/>
+  <text class="hdr" x="30" y="34">CURRENTLY</text>
+  <rect x="30" y="44" width="34" height="2" fill="#D9B87C"/>
+  <line x1="30" y1="52" x2="830" y2="52" stroke="#23202A"/>
+  <g>
+    <text class="what" x="30" y="74">ORCA</text>
+    <text class="det"  x="150" y="74">hardening the deterministic safety policy</text>
+    <rect x="560" y="69" width="250" height="4" rx="2" fill="#23202A"/>
+    <rect x="560" y="69" width="0" height="4" rx="2" fill="#2E7D5B">
+      <animate attributeName="width" values="0;180" dur="1.1s"
+               begin="0.35s" fill="freeze"/>
+    </rect>
+  </g>
+  <g>
+    <text class="what" x="30" y="114">welp</text>
+    <text class="det"  x="150" y="114">more rules, until it earns silent trust</text>
+    <rect x="560" y="109" width="250" height="4" rx="2" fill="#23202A"/>
+    <rect x="560" y="109" width="0" height="4" rx="2" fill="#2E7D5B">
+      <animate attributeName="width" values="0;138" dur="1.1s"
+               begin="0.53s" fill="freeze"/>
+    </rect>
+  </g>
+  <g>
+    <text class="what" x="30" y="154">the house</text>
+    <text class="det"  x="150" y="154">folding the widgets into layer-shell</text>
+    <rect x="560" y="149" width="250" height="4" rx="2" fill="#23202A"/>
+    <rect x="560" y="149" width="0" height="4" rx="2" fill="#2E7D5B">
+      <animate attributeName="width" values="0;100" dur="1.1s"
+               begin="0.71s" fill="freeze"/>
+    </rect>
+  </g>
+  <g>
+    <text class="what" x="30" y="194">reading</text>
+    <text class="det"  x="150" y="194">compilers, distributed systems</text>
+    <rect x="560" y="189" width="250" height="4" rx="2" fill="#23202A"/>
+    <rect x="560" y="189" width="0" height="4" rx="2" fill="#2E7D5B">
+      <animate attributeName="width" values="0;212" dur="1.1s"
+               begin="0.89s" fill="freeze"/>
+    </rect>
+  </g>
+</svg>

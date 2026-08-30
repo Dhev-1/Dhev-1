@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 279" width="860" height="279" role="img" aria-label="Stack. LANGUAGES: Rust, Python, TypeScript, C++, Kotlin, C#, QML, Bash. BACKEND: FastAPI, NestJS, ASP.NET Core, Socket.IO, PostgreSQL, SQLite, Prisma. FRONTEND: React, Angular, Astro, Jetpack Compose, Flutter, GSAP. RIGOR: Docker, GitHub Actions, OpenTelemetry, pytest, Vitest, insta. DESKTOP: Arch, Hyprland, Wayland, Quickshell, kitty, Zsh, Neovim.">
+  <title>Stack</title>
+  <style>
+    text { font-family: "JetBrains Mono", "SFMono-Regular", ui-monospace, Consolas, "Liberation Mono", monospace; }
+    .glabel { font-size: 10.5px; fill: #D9B87C; letter-spacing: .18em; }
+  </style>
+  <rect x=".5" y=".5" width="859" height="278" rx="10" fill="#0B0B0D" stroke="#23202A"/>
+  <text class="glabel" x="30" y="58">LANGUAGES</text>
+  <g><rect x="168" y="46" width="50.8" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="193.4" y="59.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Rust</text></g>
+  <g><rect x="226.8" y="46" width="65.2" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="259.4" y="59.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Python</text></g>
+  <g><rect x="300.0" y="46" width="94.0" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="347.0" y="59.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">TypeScript</text></g>
+  <g><rect x="402.0" y="46" width="43.6" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="423.8" y="59.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">C++</text></g>
+  <g><rect x="453.6" y="46" width="65.2" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="486.2" y="59.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Kotlin</text></g>
+  <g><rect x="526.8000000000001" y="46" width="36.4" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="545.0" y="59.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">C#</text></g>
+  <g><rect x="571.2" y="46" width="43.6" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="593.0" y="59.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">QML</text></g>
+  <g><rect x="622.8000000000001" y="46" width="50.8" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="648.2" y="59.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Bash</text></g>
+  <line x1="30" y1="75" x2="830" y2="75" stroke="#23202A"/>
+  <text class="glabel" x="30" y="105">BACKEND</text>
+  <g><rect x="168" y="93" width="72.4" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="204.2" y="106.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">FastAPI</text></g>
+  <g><rect x="248.4" y="93" width="65.2" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="281.0" y="106.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">NestJS</text></g>
+  <g><rect x="321.6" y="93" width="108.4" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="375.8" y="106.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">ASP.NET Core</text></g>
+  <g><rect x="438.0" y="93" width="86.8" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="481.4" y="106.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Socket.IO</text></g>
+  <g><rect x="532.8" y="93" width="94.0" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="579.8" y="106.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">PostgreSQL</text></g>
+  <g><rect x="634.8" y="93" width="65.2" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="667.4" y="106.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">SQLite</text></g>
+  <g><rect x="708.0" y="93" width="65.2" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="740.6" y="106.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Prisma</text></g>
+  <line x1="30" y1="122" x2="830" y2="122" stroke="#23202A"/>
+  <text class="glabel" x="30" y="152">FRONTEND</text>
+  <g><rect x="168" y="140" width="58.0" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="197.0" y="153.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">React</text></g>
+  <g><rect x="234.0" y="140" width="72.4" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="270.2" y="153.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Angular</text></g>
+  <g><rect x="314.4" y="140" width="58.0" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="343.4" y="153.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Astro</text></g>
+  <g><rect x="380.4" y="140" width="130.0" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="445.4" y="153.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Jetpack Compose</text></g>
+  <g><rect x="518.4" y="140" width="72.4" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="554.6" y="153.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Flutter</text></g>
+  <g><rect x="598.8" y="140" width="50.8" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="624.2" y="153.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">GSAP</text></g>
+  <line x1="30" y1="169" x2="830" y2="169" stroke="#23202A"/>
+  <text class="glabel" x="30" y="199">RIGOR</text>
+  <g><rect x="168" y="187" width="65.2" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="200.6" y="200.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Docker</text></g>
+  <g><rect x="241.2" y="187" width="122.8" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="302.6" y="200.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">GitHub Actions</text></g>
+  <g><rect x="372.0" y="187" width="115.6" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="429.8" y="200.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">OpenTelemetry</text></g>
+  <g><rect x="495.6" y="187" width="65.2" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="528.2" y="200.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">pytest</text></g>
+  <g><rect x="568.8000000000001" y="187" width="65.2" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="601.4" y="200.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Vitest</text></g>
+  <g><rect x="642.0000000000001" y="187" width="58.0" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="671.0" y="200.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">insta</text></g>
+  <line x1="30" y1="216" x2="830" y2="216" stroke="#23202A"/>
+  <text class="glabel" x="30" y="246">DESKTOP</text>
+  <g><rect x="168" y="234" width="50.8" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="193.4" y="247.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Arch</text></g>
+  <g><rect x="226.8" y="234" width="79.6" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="266.6" y="247.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Hyprland</text></g>
+  <g><rect x="314.4" y="234" width="72.4" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="350.6" y="247.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Wayland</text></g>
+  <g><rect x="394.79999999999995" y="234" width="94.0" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="441.8" y="247.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Quickshell</text></g>
+  <g><rect x="496.79999999999995" y="234" width="58.0" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="525.8" y="247.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">kitty</text></g>
+  <g><rect x="562.8" y="234" width="43.6" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="584.6" y="247.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Zsh</text></g>
+  <g><rect x="614.4" y="234" width="65.2" height="25" rx="12.5" fill="none" stroke="#23202A"/><text x="647.0" y="247.0" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Neovim</text></g>
+</svg>

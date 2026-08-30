@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 202" width="860" height="202" role="img" aria-label="Dhev Arjun A I — systems that can explain themselves. Chennai, India. Arch plus Hyprland. Rust, Python, QML.">
+  <title>Dhev Arjun A I — systems that can explain themselves</title>
+  <defs>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#D9B87C" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#D9B87C" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#D9B87C" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="felt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#2E7D5B" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#2E7D5B" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="panel">
+      <rect x="0" y="0" width="860" height="202" rx="12"/>
+    </clipPath>
+  </defs>
+  <style>
+    text { font-family: "JetBrains Mono", "SFMono-Regular", ui-monospace, Consolas, "Liberation Mono", monospace; }
+    .name   { font-size: 47px; font-weight: 700; fill: #D9B87C; letter-spacing: .045em; }
+    .phrase { font-size: 14.5px; fill: #A9A39A; letter-spacing: .02em; }
+    .mark   { font-size: 176px; fill: #D9B87C; opacity: .045; }
+  </style>
+
+  <rect x=".5" y=".5" width="859" height="201" rx="12" fill="#0B0B0D" stroke="#23202A"/>
+  <g clip-path="url(#panel)">
+    <rect x="0" y="0" width="860" height="202" fill="url(#felt)"/>
+    <text class="mark" x="808" y="172" text-anchor="end">♠</text>
+
+    <!-- a slow gold sweep, the only thing that moves until you look closer -->
+    <rect x="-260" y="0" width="260" height="202" fill="url(#sweep)" opacity=".5">
+      <animate attributeName="x" values="-260;860" dur="7s" repeatCount="indefinite"/>
+    </rect>
+
+    <text class="name" x="40" y="76">DHEV ARJUN A I</text>
+
+    <rect x="42" y="97" height="2" width="0" fill="#D9B87C">
+      <animate attributeName="width" values="0;236" dur="1.1s" begin="0.2s" fill="freeze"/>
+    </rect>
+
+    <text class="phrase" x="42" y="127" opacity="0">systems that can explain themselves
+      <animate attributeName="opacity" dur="13.5s" repeatCount="indefinite"
+               values="0;0;1;1;0;0"
+               keyTimes="0;0.0;0.022;0.3113;0.3333;1"/>
+    </text>
+    <text class="phrase" x="42" y="127" opacity="0">same inputs, same result, every time
+      <animate attributeName="opacity" dur="13.5s" repeatCount="indefinite"
+               values="0;0;1;1;0;0"
+               keyTimes="0;0.3333;0.3553;0.6447;0.6667;1"/>
+    </text>
+    <text class="phrase" x="42" y="127" opacity="0">deterministic by default
+      <animate attributeName="opacity" dur="13.5s" repeatCount="indefinite"
+               values="0;0;1;1;0;0"
+               keyTimes="0;0.6667;0.6887;0.978;1.0;1"/>
+    </text>
+
+    <g><rect x="40" y="156" width="122.8" height="24" rx="12.0" fill="none" stroke="#3A3444"/><text x="101.4" y="168.5" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Chennai, India</text></g>
+    <g><rect x="172.8" y="156" width="130.0" height="24" rx="12.0" fill="none" stroke="#3A3444"/><text x="237.8" y="168.5" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Arch + Hyprland</text></g>
+    <g><rect x="312.8" y="156" width="158.8" height="24" rx="12.0" fill="none" stroke="#3A3444"/><text x="392.2" y="168.5" font-size="12" fill="#A9A39A" text-anchor="middle" dominant-baseline="middle">Rust · Python · QML</text></g>
+  </g>
+</svg>
