@@ -31,7 +31,11 @@ enough that the hook never makes your prompt feel slow.
 
 <br/>
 
-<img src="./assets/stack.svg" alt="Stack. Languages: Rust, Python, TypeScript, C++, Kotlin, C#, QML, Bash. Backend: FastAPI, NestJS, ASP.NET Core, Socket.IO, PostgreSQL, SQLite, Prisma. Frontend: React, Angular, Astro, Jetpack Compose, Flutter, GSAP. Rigor: Docker, GitHub Actions, OpenTelemetry, pytest, Vitest, insta. Desktop: Arch, Hyprland, Wayland, Quickshell, kitty, Zsh, Neovim." width="100%" />
+<img src="https://skillicons.dev/icons?i=rust,py,ts,cpp,cs,kotlin,qt,bash&perline=8" alt="Rust, Python, TypeScript, C++, C#, Kotlin, Qt/QML, Bash" />
+<br/>
+<img src="https://skillicons.dev/icons?i=fastapi,nestjs,dotnet,nodejs,react,angular,astro,flutter&perline=8" alt="FastAPI, NestJS, .NET, Node.js, React, Angular, Astro, Flutter" />
+<br/>
+<img src="https://skillicons.dev/icons?i=postgres,sqlite,prisma,docker,githubactions,git,linux,arch&perline=8" alt="PostgreSQL, SQLite, Prisma, Docker, GitHub Actions, Git, Linux, Arch" />
 
 <br/>
 
