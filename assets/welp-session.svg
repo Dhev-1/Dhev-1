@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 264" width="780" height="264" role="img" aria-label="Terminal session: cargo test exits 101 with an unhelpful error, then welp reports that the active toolchain is nightly while rust-toolchain.toml pins 1.82.0, and suggests rustup override set 1.82.0">
+  <title>welp — diagnosing a failed cargo test</title>
+
+  <defs>
+    <clipPath id="typeA">
+      <rect x="-162.8" y="44" width="184.8" height="20">
+        <animate attributeName="x" dur="12.0s" repeatCount="indefinite"
+                 calcMode="discrete"
+                 values="-162.8;-162.8;-154.4;-146.0;-137.6;-129.2;-120.8;-112.4;-104.0;-95.6;-87.2;-78.8;-70.4;-62.0;-53.6;-45.2;-36.8;-28.4;-20.0;-11.6;-3.2;5.2;13.6;22.0;22"
+                 keyTimes="0.0;0.01667;0.02159;0.02652;0.03144;0.03636;0.04129;0.04621;0.05114;0.05606;0.06098;0.06591;0.07083;0.07576;0.08068;0.08561;0.09053;0.09545;0.10038;0.1053;0.11023;0.11515;0.12008;0.125;1.0"/>
+      </rect>
+    </clipPath>
+    <clipPath id="typeB">
+      <rect x="-28.4" y="104" width="50.400000000000006" height="20">
+        <animate attributeName="x" dur="12.0s" repeatCount="indefinite"
+                 calcMode="discrete"
+                 values="-28.4;-28.4;-20.0;-11.6;-3.2;5.2;13.6;22.0;22"
+                 keyTimes="0.0;0.20833;0.21389;0.21944;0.225;0.23056;0.23611;0.24167;1.0"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    text { font-family: "JetBrains Mono", "SFMono-Regular", ui-monospace, Consolas, "Liberation Mono", monospace;
+           font-size: 14px; dominant-baseline: middle; }
+    .title { font-size: 11.5px; fill: #5C5665; letter-spacing: .08em; }
+    .prompt { fill: #2E7D5B; }
+    .cmd    { fill: #E8E3DA; }
+    .err    { fill: #B4544B; }
+    .fail   { fill: #D9B87C; }
+    .meta   { fill: #5C5665; }
+    .key    { fill: #6F6879; }
+    .val    { fill: #A9A39A; }
+    .fix    { fill: #2E7D5B; }
+    .arrow  { fill: #3A3543; }
+    .caret  { fill: #D9B87C; }
+  </style>
+
+  <rect x=".5" y=".5" width="779" height="263" rx="10" fill="#0B0B0D" stroke="#23202A"/>
+  <path d="M .5 10.5 A 10 10 0 0 1 10.5 .5 H 769.5 A 10 10 0 0 1 779.5 10.5 V 34.5 H .5 Z" fill="#111015"/>
+  <line x1="0" y1="34.5" x2="780" y2="34.5" stroke="#23202A"/>
+  <circle cx="22" cy="17.5" r="4.5" fill="#3A3543"/>
+  <circle cx="39" cy="17.5" r="4.5" fill="#3A3543"/>
+  <circle cx="56" cy="17.5" r="4.5" fill="#D9B87C"/>
+  <text class="title" x="390" y="18" text-anchor="middle">dhev@arch  ~/cloon/wat/welp</text>
+
+  <g clip-path="url(#typeA)">
+    <text x="22" y="58" textLength="184.8" lengthAdjust="spacing"><tspan class="prompt">$ </tspan><tspan class="cmd">cargo test --release</tspan></text>
+    <animate attributeName="opacity" dur="12.0s" repeatCount="indefinite"
+             values="1;1;0;0"
+             keyTimes="0;0.88333;0.925;1"/>
+  </g>
+  <rect class="caret" x="22" y="49" width="8" height="17" opacity="0">
+    <animate attributeName="x" dur="12.0s" repeatCount="indefinite"
+             calcMode="discrete"
+             values="22;22.0;30.4;38.8;47.2;55.6;64.0;72.4;80.8;89.2;97.6;106.0;114.4;122.8;131.2;139.6;148.0;156.4;164.8;173.2;181.6;190.0;198.4;206.8;206.8"
+             keyTimes="0.0;0.01667;0.02159;0.02652;0.03144;0.03636;0.04129;0.04621;0.05114;0.05606;0.06098;0.06591;0.07083;0.07576;0.08068;0.08561;0.09053;0.09545;0.10038;0.1053;0.11023;0.11515;0.12008;0.125;1.0"/>
+    <animate attributeName="opacity" dur="12.0s" repeatCount="indefinite"
+             calcMode="discrete" values="0;1;0;0"
+             keyTimes="0;0.0;0.14583;1"/>
+    <animate attributeName="fill-opacity" dur="0.9s" repeatCount="indefinite"
+             calcMode="discrete" values="1;0" keyTimes="0;0.55"/>
+  </rect>
+
+  <g class="err">
+    <text x="22" y="84">error: process didn't exit successfully (exit code: 101)</text>
+    <animate attributeName="opacity" dur="12.0s" repeatCount="indefinite"
+             values="0;0;1;1;0;0"
+             keyTimes="0;0.15833;0.17917;0.88333;0.925;1"/>
+  </g>
+
+  <g clip-path="url(#typeB)">
+    <text x="22" y="118" textLength="50.400000000000006" lengthAdjust="spacing"><tspan class="prompt">$ </tspan><tspan class="cmd">welp</tspan></text>
+    <animate attributeName="opacity" dur="12.0s" repeatCount="indefinite"
+             values="1;1;0;0"
+             keyTimes="0;0.88333;0.925;1"/>
+  </g>
+  <rect class="caret" x="22" y="109" width="8" height="17" opacity="0">
+    <animate attributeName="x" dur="12.0s" repeatCount="indefinite"
+             calcMode="discrete"
+             values="22;22.0;30.4;38.8;47.2;55.6;64.0;72.4;72.4"
+             keyTimes="0.0;0.20833;0.21389;0.21944;0.225;0.23056;0.23611;0.24167;1.0"/>
+    <animate attributeName="opacity" dur="12.0s" repeatCount="indefinite"
+             calcMode="discrete" values="0;1;0;0"
+             keyTimes="0;0.19167;0.26667;1"/>
+    <animate attributeName="fill-opacity" dur="0.9s" repeatCount="indefinite"
+             calcMode="discrete" values="1;0" keyTimes="0;0.55"/>
+  </rect>
+
+  <g>
+    <text class="fail" x="22" y="150">✗ cargo test --release</text>
+    <text class="meta" x="758" y="150" text-anchor="end">exit 101  ·  1.8s ago</text>
+    <animate attributeName="opacity" dur="12.0s" repeatCount="indefinite"
+             values="0;0;1;1;0;0"
+             keyTimes="0;0.275;0.29583;0.88333;0.925;1"/>
+  </g>
+  <g>
+    <text class="arrow" x="22" y="176">↳</text>
+    <text class="key" x="44" y="176">toolchain</text>
+    <text class="val" x="150" y="176">nightly-2026-08-02</text>
+    <animate attributeName="opacity" dur="12.0s" repeatCount="indefinite"
+             values="0;0;1;1;0;0"
+             keyTimes="0;0.29583;0.31667;0.88333;0.925;1"/>
+  </g>
+  <g>
+    <text class="arrow" x="22" y="200">↳</text>
+    <text class="key" x="44" y="200">pinned</text>
+    <text class="val" x="150" y="200">rust-toolchain.toml wants 1.82.0</text>
+    <animate attributeName="opacity" dur="12.0s" repeatCount="indefinite"
+             values="0;0;1;1;0;0"
+             keyTimes="0;0.31667;0.3375;0.88333;0.925;1"/>
+  </g>
+  <g>
+    <text class="arrow" x="22" y="224">↳</text>
+    <text class="key" x="44" y="224">try</text>
+    <text class="fix" x="150" y="224">rustup override set 1.82.0</text>
+    <animate attributeName="opacity" dur="12.0s" repeatCount="indefinite"
+             values="0;0;1;1;0;0"
+             keyTimes="0;0.3375;0.35833;0.88333;0.925;1"/>
+  </g>
+</svg>
