@@ -8,6 +8,7 @@ is SMIL, which survives GitHub's image proxy; CSS animation does not reliably.
 Run:  python3 assets/build-panels.py
 """
 
+import json
 import pathlib
 
 W = 860
@@ -21,19 +22,49 @@ CH12 = 7.2      # advance at font-size 12
 CH13 = 7.8
 
 HERE = pathlib.Path(__file__).parent
+ICONS = json.loads((HERE / "icons.json").read_text())
+
+# label -> Simple Icons slug; anything absent renders as a text-only chip
+ICON_OF = {
+    "Rust": "rust", "Python": "python", "TypeScript": "typescript",
+    "C++": "cplusplus", "Kotlin": "kotlin", "QML": "qt", "Bash": "gnubash",
+    "FastAPI": "fastapi", "NestJS": "nestjs", ".NET Core": "dotnet",
+    "Socket.IO": "socketdotio", "PostgreSQL": "postgresql", "SQLite": "sqlite",
+    "Prisma": "prisma", "React": "react", "Angular": "angular", "Astro": "astro",
+    "Compose": "jetpackcompose", "Flutter": "flutter", "GSAP": "greensock",
+    "Docker": "docker", "Actions": "githubactions",
+    "OTel": "opentelemetry", "pytest": "pytest", "Vitest": "vitest",
+    "Arch": "archlinux", "Hyprland": "hyprland", "Wayland": "wayland",
+    "Quickshell": "qt", "Zsh": "zsh", "Neovim": "neovim",
+}
+GLYPH = 15          # rendered logo size
+SCALE = GLYPH / 24  # Simple Icons ship on a 24x24 grid
 
 
 def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def chip(x, y, label, h=24, fs=12, fill=VAL, stroke=HAIR, ch=CH12):
-    """A pill with the text centred; returns (markup, width)."""
-    w = round(len(label) * ch + 22, 1)
+def chip(x, y, label, h=24, fs=12, fill=VAL, stroke=HAIR, ch=CH12, icon=False):
+    """A pill, optionally with its brand mark drawn in gold; returns (markup, width)."""
+    slug = ICON_OF.get(label) if icon else None
+    d = ICONS.get(slug) if slug else None
+
+    if d:
+        w = round(len(label) * ch + GLYPH + 31, 1)
+        ix, iy = x + 12, y + (h - GLYPH) / 2
+        art = (f'<path transform="translate({round(ix,1)},{round(iy,1)}) scale({round(SCALE,4)})" '
+               f'fill="{GOLD}" d="{d}"/>')
+        tx = ix + GLYPH + 7
+        body = (art + f'<text x="{round(tx,1)}" y="{y + h/2 + 0.5}" font-size="{fs}" '
+                      f'fill="{fill}" dominant-baseline="middle">{esc(label)}</text>')
+    else:
+        w = round(len(label) * ch + 22, 1)
+        body = (f'<text x="{round(x + w/2, 1)}" y="{y + h/2 + 0.5}" font-size="{fs}" '
+                f'fill="{fill}" text-anchor="middle" dominant-baseline="middle">{esc(label)}</text>')
+
     m = (f'<g><rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{h/2}" '
-         f'fill="none" stroke="{stroke}"/>'
-         f'<text x="{round(x + w/2, 1)}" y="{y + h/2 + 0.5}" font-size="{fs}" fill="{fill}" '
-         f'text-anchor="middle" dominant-baseline="middle">{esc(label)}</text></g>')
+         f'fill="none" stroke="{stroke}"/>{body}</g>')
     return m, w
 
 
@@ -115,28 +146,28 @@ hero = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {HERO_H}" wi
 # ── stack ───────────────────────────────────────────────────────────────────
 GROUPS = [
     ("LANGUAGES", ["Rust", "Python", "TypeScript", "C++", "Kotlin", "C#", "QML", "Bash"]),
-    ("BACKEND",   ["FastAPI", "NestJS", "ASP.NET Core", "Socket.IO",
-                   "PostgreSQL", "SQLite", "Prisma"]),
-    ("FRONTEND",  ["React", "Angular", "Astro", "Jetpack Compose", "Flutter", "GSAP"]),
-    ("RIGOR",     ["Docker", "GitHub Actions", "OpenTelemetry", "pytest", "Vitest",
+    ("BACKEND",   ["FastAPI", "NestJS", ".NET Core", "Socket.IO",
+                   "PostgreSQL", "SQLite"]),
+    ("FRONTEND",  ["React", "Angular", "Astro", "Compose", "Flutter", "GSAP"]),
+    ("RIGOR",     ["Docker", "Actions", "OTel", "pytest", "Vitest",
                    "insta"]),
     ("DESKTOP",   ["Arch", "Hyprland", "Wayland", "Quickshell", "kitty", "Zsh", "Neovim"]),
 ]
 
-LABEL_X, ITEM_X, MAXW = 30, 168, W - 40
-rows, y = [], 46
+LABEL_X, ITEM_X, MAXW = 28, 146, W - 26
+rows, y = [], 44
 for name, items in GROUPS:
     rows.append(f'  <text class="glabel" x="{LABEL_X}" y="{y + 12}">{esc(name)}</text>')
     x, line_top = ITEM_X, y
     for it in items:
-        m, w = chip(x, y, it, h=25, fs=12)
+        m, w = chip(x, y, it, h=28, fs=12, icon=True)
         if x + w > MAXW:                       # wrap
             x = ITEM_X
-            y += 33
-            m, w = chip(x, y, it, h=25, fs=12)
+            y += 38
+            m, w = chip(x, y, it, h=28, fs=12, icon=True)
         rows.append("  " + m)
         x += w + 8
-    y += 33
+    y += 38
     if (name, items) != GROUPS[-1]:
         rows.append(f'  <line x1="{LABEL_X}" y1="{y - 4}" x2="{W - 30}" y2="{y - 4}" stroke="{HAIR}"/>')
         y += 14
