@@ -31,11 +31,15 @@ enough that the hook never makes your prompt feel slow.
 
 <br/>
 
-<img src="https://skillicons.dev/icons?i=rust,py,ts,cpp,cs,kotlin,qt,bash&perline=8" alt="Rust, Python, TypeScript, C++, C#, Kotlin, Qt/QML, Bash" />
+<img src="https://skillicons.dev/icons?i=rust,py,ts,js,cpp,cs,kotlin,dart&perline=8" alt="Rust, Python, TypeScript, JavaScript, C++, C#, Kotlin, Dart" />
 <br/>
-<img src="https://skillicons.dev/icons?i=fastapi,nestjs,dotnet,nodejs,react,angular,astro,flutter&perline=8" alt="FastAPI, NestJS, .NET, Node.js, React, Angular, Astro, Flutter" />
+<img src="https://skillicons.dev/icons?i=react,angular,astro,tailwind,vite,flutter,materialui,qt&perline=8" alt="React, Angular, Astro, Tailwind CSS, Vite, Flutter, Material UI, Qt/QML" />
 <br/>
-<img src="https://skillicons.dev/icons?i=postgres,sqlite,prisma,docker,githubactions,git,linux,arch&perline=8" alt="PostgreSQL, SQLite, Prisma, Docker, GitHub Actions, Git, Linux, Arch" />
+<img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,fastapi,dotnet,prisma,postgres,sqlite&perline=8" alt="Node.js, Express, NestJS, FastAPI, ASP.NET Core, Prisma, PostgreSQL, SQLite" />
+<br/>
+<img src="https://skillicons.dev/icons?i=docker,aws,firebase,githubactions,git,github,linux,arch&perline=8" alt="Docker, AWS, Firebase, GitHub Actions, Git, GitHub, Linux, Arch Linux" />
+<br/>
+<img src="https://skillicons.dev/icons?i=jest,vitest,gradle,androidstudio,bash,neovim&perline=6" alt="Jest, Vitest, Gradle, Android Studio, Bash, Neovim" />
 
 <br/>
 
