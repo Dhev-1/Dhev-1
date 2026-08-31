@@ -24,6 +24,7 @@ import urllib.parse
 import urllib.request
 
 PILL = "161B22"        # a touch lighter than GitHub's dark canvas, so pills read
+GOLD = "D9B87C"        # the page accent, used only on the category labels
 PIN = "https://cdn.jsdelivr.net/npm/simple-icons@11/icons"
 
 BEGIN = "<!-- stack:begin -->"
@@ -109,16 +110,24 @@ def badge(label, slug):
     return f'<img src="{url}" alt="{alt}"/>'
 
 
+def label_badge(group):
+    """The category name as a gold pill - the one place the page palette shows."""
+    text = urllib.parse.quote(group.upper().replace("-", "--").replace("_", "__"))
+    url = (f"https://img.shields.io/badge/{text}-{GOLD}"
+           f"?style=flat-square&labelColor={GOLD}")
+    alt = group.replace("&", "&amp;")
+    return f'<img src="{url}" alt="{alt}"/>'
+
+
 def main():
-    lines = ["<table>"]
+    # No <table>: GitHub draws a 1px border on every cell, which turns the wall
+    # into a spreadsheet. Each group is its own centred paragraph led by a gold
+    # label pill, so the section reads as badges rather than as a grid.
+    groups = []
     for group, items in ROWS:
         badges = " ".join(badge(l, s) for l, s in items)
-        # non-breaking spaces: the label column is auto-width, and without them
-        # the longer labels wrap to two lines against the badge block
-        label = group.replace("&", "&amp;").replace(" ", "&nbsp;")
-        lines.append(f'<tr><td align="right"><b>{label}</b></td><td>{badges}</td></tr>')
-    lines.append("</table>")
-    block = "\n".join(lines)
+        groups.append(label_badge(group) + " " + badges)
+    block = "\n\n".join(groups)
 
     path = pathlib.Path(__file__).resolve().parent.parent / "README.md"
     src = path.read_text()
